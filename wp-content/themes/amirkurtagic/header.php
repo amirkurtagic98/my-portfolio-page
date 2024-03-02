@@ -26,34 +26,36 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'amirkurtagic' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$amirkurtagic_description = get_bloginfo( 'description', 'display' );
-			if ( $amirkurtagic_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $amirkurtagic_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'amirkurtagic' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="topbar">
+						<div class="logo">
+							<?php
+								the_custom_logo();
+							?>
+						</div>
+						<ul class="topbar__nav">
+							<li><a href="#">Work</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						<div id="menuToggler"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/menu-toggler.svg"); ?></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header><!-- #masthead -->
+	<div id="mobileMenu">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ul class="mobile-menu-nav">
+						<li><a href="#">Work</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>

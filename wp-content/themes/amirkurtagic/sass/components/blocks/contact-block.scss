@@ -1,0 +1,181 @@
+.contact-block {
+    padding: 64px 0;
+    @media (min-width: 992px) {
+        padding: 80px 0;
+    }
+
+    .offset-right-lg-2 {
+        margin-right: 0;
+        @media (min-width: 992px) {
+            margin-right: 16.66666667%;
+        }
+    }
+
+    &__info {
+        margin-bottom: 64px;
+        @media (min-width: 992px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-family: 'Bebas Neue';
+        font-size: 43px;
+        font-weight: 400;
+        line-height: 43px;
+        letter-spacing: -0.02em;
+        color: #FFF;
+        margin-bottom: 12px;
+        @media (min-width: 576px) {
+            font-size: 76px;
+            line-height: 76px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 40px;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #C7C7C7;
+            @media (min-width: 576px) {
+                font-size: 18px;
+                line-height: 27px;
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #FFF;
+                border-bottom: 1px solid #D3E97A;
+                text-decoration: none;
+                @media (min-width: 576px) {
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        gap: 32px;
+        @media (min-width: 576px) {
+            gap: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__copyright {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #C7C7C7;
+    }
+
+    &__form {
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #C7C7C7;
+
+            .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .wpcf7-form-control.wpcf7-textarea {
+                padding: 10px 16px;
+                background: #333;
+                border-radius: 4px;
+                border: none;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #FFF;
+                width: 100%;
+                @media (min-width: 576px) {
+                    padding: 12px 16px;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .wpcf7-form-control.wpcf7-textarea {
+                height: 182px;
+                @media (min-width: 576px) {
+                    height: 156px;
+                }
+            }
+        }
+
+        .wpcf7-form-control.wpcf7-submit {
+            padding: 20px 40px;
+            background: #D3E97A;
+            border-radius: 100px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            color: #0A0A0A;
+            text-transform: uppercase;
+            border-color: unset;
+            margin-top: 8px;
+            margin-bottom: 80px;
+            @media (min-width: 992px) {
+                margin-top: 16px;
+                margin-bottom: 0px;
+            }
+
+            &:hover {
+                background: #0A0A0A;
+                color: #D3E97A;
+            }
+        }
+
+        .wpcf7-spinner {
+            display: none;
+        }
+
+        .wpcf7-form.invalid .wpcf7-response-output,
+        .wpcf7-form.failed .wpcf7-response-output {
+            border-radius: 3px;
+            background: #dc3232;
+            padding: 16px 24px;
+            border-color: #dc3232;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 1.12px;
+            color: #fff;
+            margin: 0 0 2em;
+            @media (min-width: 992px) {
+                margin: 2em 0 0;
+            }
+        }
+
+        .wpcf7-form.sent .wpcf7-response-output {
+            border-radius: 3px;
+            background: #196406;
+            padding: 16px 24px;
+            border-color: #196406;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 1.12px;
+            color: #fff;
+            margin: 0 0 2em;
+            @media (min-width: 992px) {
+                margin: 2em 0 0;
+            }
+        }
+    }
+}

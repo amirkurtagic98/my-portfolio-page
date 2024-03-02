@@ -1,0 +1,114 @@
+.my-experience-block {
+  padding: 64px 0;
+  border-bottom: 1px solid #484848;
+}
+@media (min-width: 992px) {
+  .my-experience-block {
+    padding: 80px 0;
+  }
+}
+.my-experience-block__title {
+  font-family: "Bebas Neue";
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: -0.02em;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+@media (min-width: 576px) {
+  .my-experience-block__title {
+    font-size: 76px;
+    line-height: 76px;
+  }
+}
+@media (min-width: 992px) {
+  .my-experience-block__title {
+    margin-bottom: 0;
+  }
+}
+.my-experience-block__job {
+  padding-bottom: 40px;
+}
+@media (min-width: 576px) {
+  .my-experience-block__job {
+    padding-bottom: 80px;
+  }
+}
+.my-experience-block__job:last-child {
+  padding-bottom: 0px;
+}
+.my-experience-block__job-first {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+@media (min-width: 576px) {
+  .my-experience-block__job-first {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+    margin-bottom: 16px;
+  }
+}
+.my-experience-block__job-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+  color: #FFF;
+}
+@media (min-width: 576px) {
+  .my-experience-block__job-title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+.my-experience-block__job-date {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #C7C7C7;
+}
+@media (min-width: 576px) {
+  .my-experience-block__job-date {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.my-experience-block__job-description p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #C7C7C7;
+}
+@media (min-width: 576px) {
+  .my-experience-block__job-description p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.my-experience-block__job-second {
+  margin-bottom: 12px;
+}
+@media (min-width: 576px) {
+  .my-experience-block__job-second {
+    margin-bottom: 16px;
+  }
+}
+.my-experience-block__job-company {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #D3E97A !important;
+  text-decoration: none;
+}
+@media (min-width: 576px) {
+  .my-experience-block__job-company {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+/*# sourceMappingURL=my-experience-block.css.map */

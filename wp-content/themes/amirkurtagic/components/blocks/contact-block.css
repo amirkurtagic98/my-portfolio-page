@@ -1,0 +1,187 @@
+.contact-block {
+  padding: 64px 0;
+}
+@media (min-width: 992px) {
+  .contact-block {
+    padding: 80px 0;
+  }
+}
+.contact-block .offset-right-lg-2 {
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  .contact-block .offset-right-lg-2 {
+    margin-right: 16.66666667%;
+  }
+}
+.contact-block__info {
+  margin-bottom: 64px;
+}
+@media (min-width: 992px) {
+  .contact-block__info {
+    margin-bottom: 0;
+  }
+}
+.contact-block__title {
+  font-family: "Bebas Neue";
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: -0.02em;
+  color: #FFF;
+  margin-bottom: 12px;
+}
+@media (min-width: 576px) {
+  .contact-block__title {
+    font-size: 76px;
+    line-height: 76px;
+    margin-bottom: 16px;
+  }
+}
+.contact-block__description {
+  margin-bottom: 40px;
+}
+.contact-block__description p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #C7C7C7;
+}
+@media (min-width: 576px) {
+  .contact-block__description p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.contact-block__description p a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFF;
+  border-bottom: 1px solid #D3E97A;
+  text-decoration: none;
+}
+@media (min-width: 576px) {
+  .contact-block__description p a {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.contact-block__links {
+  display: flex;
+  gap: 32px;
+}
+@media (min-width: 576px) {
+  .contact-block__links {
+    gap: 24px;
+  }
+}
+.contact-block__links a {
+  text-decoration: none;
+}
+.contact-block__copyright {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #C7C7C7;
+}
+.contact-block__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #C7C7C7;
+}
+.contact-block__form label .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .contact-block__form label .wpcf7-form-control.wpcf7-textarea {
+  padding: 10px 16px;
+  background: #333;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFF;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .contact-block__form label .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .contact-block__form label .wpcf7-form-control.wpcf7-textarea {
+    padding: 12px 16px;
+  }
+}
+.contact-block__form label .wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required:focus, .contact-block__form label .wpcf7-form-control.wpcf7-textarea:focus {
+  outline: none;
+}
+.contact-block__form label .wpcf7-form-control.wpcf7-textarea {
+  height: 182px;
+}
+@media (min-width: 576px) {
+  .contact-block__form label .wpcf7-form-control.wpcf7-textarea {
+    height: 156px;
+  }
+}
+.contact-block__form .wpcf7-form-control.wpcf7-submit {
+  padding: 20px 40px;
+  background: #D3E97A;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #0A0A0A;
+  text-transform: uppercase;
+  border-color: unset;
+  margin-top: 8px;
+  margin-bottom: 80px;
+}
+@media (min-width: 992px) {
+  .contact-block__form .wpcf7-form-control.wpcf7-submit {
+    margin-top: 16px;
+    margin-bottom: 0px;
+  }
+}
+.contact-block__form .wpcf7-form-control.wpcf7-submit:hover {
+  background: #0A0A0A;
+  color: #D3E97A;
+}
+.contact-block__form .wpcf7-spinner {
+  display: none;
+}
+.contact-block__form .wpcf7-form.invalid .wpcf7-response-output,
+.contact-block__form .wpcf7-form.failed .wpcf7-response-output {
+  border-radius: 3px;
+  background: #dc3232;
+  padding: 16px 24px;
+  border-color: #dc3232;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.12px;
+  color: #fff;
+  margin: 0 0 2em;
+}
+@media (min-width: 992px) {
+  .contact-block__form .wpcf7-form.invalid .wpcf7-response-output,
+  .contact-block__form .wpcf7-form.failed .wpcf7-response-output {
+    margin: 2em 0 0;
+  }
+}
+.contact-block__form .wpcf7-form.sent .wpcf7-response-output {
+  border-radius: 3px;
+  background: #196406;
+  padding: 16px 24px;
+  border-color: #196406;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.12px;
+  color: #fff;
+  margin: 0 0 2em;
+}
+@media (min-width: 992px) {
+  .contact-block__form .wpcf7-form.sent .wpcf7-response-output {
+    margin: 2em 0 0;
+  }
+}
+/*# sourceMappingURL=contact-block.css.map */

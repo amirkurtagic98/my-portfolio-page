@@ -50,13 +50,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
-$container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1200px,
-) !default;
-
 /* Bootstrap
 --------------------------------------------------------------*/
 @import '../node_modules/bootstrap/scss/bootstrap';
@@ -136,6 +129,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    background: #000;
 }
 
 article,aside,details,figcaption,figure,
