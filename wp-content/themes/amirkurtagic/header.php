@@ -36,9 +36,9 @@
 							?>
 						</div>
 						<ul class="topbar__nav">
-							<li><a href="#">Work</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Contact</a></li>
+							<?php
+								wp_nav_menu(array('menu' => 'Korisni Linkovi Header', 'container' => false, 'items_wrap' => '%3$s'));
+							?>
 						</ul>
 						<div id="menuToggler"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/menu-toggler.svg"); ?></div>
 					</div>
@@ -51,9 +51,9 @@
 			<div class="row">
 				<div class="col-12">
 					<ul class="mobile-menu-nav">
-						<li><a href="#">Work</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<?php
+							wp_nav_menu(array('menu' => 'Korisni Linkovi Header', 'container' => false, 'items_wrap' => '%3$s'));
+						?>
 					</ul>
 				</div>
 			</div>

@@ -41,7 +41,7 @@ get_header();
     </div>
 </section>
 
-<section class="featured-projects-block">
+<section class="featured-projects-block" id="work">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -99,7 +99,6 @@ get_header();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="featured-projects-block__image-frame">
-                        <!-- <div class="featured-projects-block__tag">Conceptual Work</div> -->
                         <div class="featured-projects-block__image">
                             <img src="http://localhost/12-MyPortfolioPage/myPortfolioPage/wp-content/uploads/2024/03/Project-2.png" alt="Project 2">
                         </div> 
@@ -211,7 +210,7 @@ get_header();
     </div>
 </section>
 
-<section class="contact-block">
+<section class="contact-block" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 offset-right-lg-2 d-flex flex-column justify-content-between">
@@ -303,7 +302,7 @@ get_header();
     </div>
 </section>
 
-<section class="my-experience-block">
+<section class="my-experience-block" id="work">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">

@@ -12314,6 +12314,13 @@ big {
 body {
   background: #fff;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #C7C7C7;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #D3E97A;
+}
 
 hr {
   background-color: #ccc;
@@ -12374,12 +12381,15 @@ table {
 --------------------------------------------- */
 a {
   color: #4169e1;
-}
-a:visited {
-  color: #800080;
-}
-a:hover, a:focus, a:active {
-  color: #191970;
+  /* &:visited {
+  	color: $color__link-visited;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+  	color: $color__link-hover;
+  } */
 }
 a:focus {
   outline: thin dotted;
@@ -12682,6 +12692,16 @@ textarea {
 
 /* Header
 --------------------------------------------- */
+header {
+  background: #000 !important;
+}
+header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.7s all;
+}
 header .topbar {
   display: flex;
   align-items: center;
@@ -13575,7 +13595,7 @@ header .topbar #menuToggler {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: #D3E97A !important;
+  color: #D3E97A;
   text-decoration: none;
 }
 @media (min-width: 576px) {

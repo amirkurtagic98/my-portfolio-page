@@ -46,12 +46,22 @@ function amirkurtagic_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'amirkurtagic' ),
-		)
-	);
+	function theme_setup() {
+		add_theme_support('menus');
+	}
+	
+	add_action('after_setup_theme', 'theme_setup');
+	
+	function register_custom_menus() {
+		register_nav_menus(
+			array(
+				'header_menu' => __('Header Menu'),
+			)
+		);
+	}
+	
+	add_action('init', 'register_custom_menus');
+
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
@@ -212,4 +222,10 @@ function fix_svg() {
 			</style>';
 }
 add_action( 'admin_head', 'fix_svg' );
+
+/**
+ * Blocks Function.
+ */
+require get_template_directory() . '/inc/blocks-function.php';
+
 

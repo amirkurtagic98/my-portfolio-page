@@ -1,4 +1,14 @@
 header {
+    background: #000 !important;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        transition: 0.7s all;
+    }
+
     .topbar {
         display: flex;
         align-items: center;

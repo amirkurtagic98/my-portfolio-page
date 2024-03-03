@@ -1,3 +1,14 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
+
+	&::-webkit-scrollbar {
+		width: 10px;
+		background: #C7C7C7;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #D3E97A;
+	}
 }
+
+
