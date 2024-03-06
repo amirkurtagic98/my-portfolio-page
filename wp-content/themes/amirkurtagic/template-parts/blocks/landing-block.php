@@ -33,8 +33,11 @@
                         ?>
                         <a href="<?php echo esc_url( $link_url ); ?>" class="btn d-lg-flex d-none">
                             <?php echo esc_html( $link_title ); ?> 
-                            <span class="landing-block__icon landing-block__icon-1"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/circle.svg"); ?></span>
-                            <span class="landing-block__icon landing-block__icon-2 d-none"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/circle-hover.svg"); ?></span>
+                            <div class="landing-block__circle-wrapper">
+                                <div class="landing-block__circle">
+                                    <span class="landing-block__icon-desktop"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/arrow-white.svg"); ?></span>
+                                </div>
+                            </div>
                         </a>
                         <a href="<?php echo esc_url( $link_url ); ?>" class="btn d-lg-none d-flex">
                             <?php echo esc_html( $link_title ); ?> 

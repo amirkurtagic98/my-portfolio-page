@@ -55,7 +55,7 @@
         .btn {
             background: #D3E97A;
             border-radius: 100px;
-            padding: 4px 6px 4px 24px;
+            padding: 5px 6px 5px 24px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -65,7 +65,42 @@
             line-height: 16px;
             color: #0A0A0A;
             text-transform: uppercase;
+            position: relative;
+            @media(min-width: 992px) {
+                padding: 17px 36px 17px 24px;
+                gap: 24px;
+            }
+
+            &:hover {
+                .landing-block__circle {
+                    padding: 20px; 
+                    margin-top: -15px; 
+                    margin-left: -15px; 
+                }
+
+                .landing-block__icon-desktop {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
         }
+    }
+
+    &__circle {
+        width: 8px;
+        height: 8px; 
+        border-radius: 50%; 
+        background-color: #000; 
+        transition:all .25s ease;
+        position: absolute;
+        top: 21px;
+    }
+
+    &__icon-desktop {
+        display: none;
     }
 
     &__image {

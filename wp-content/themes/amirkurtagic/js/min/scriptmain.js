@@ -1,8 +1,9 @@
 jQuery("#menuToggler").on("click", function () {
+    jQuery("html").scrollTop(0);
     jQuery("#mobileMenu").toggleClass("active");
 });
 
-jQuery(".landing-block__links .btn").hover(
+/* jQuery(".landing-block__links .btn").hover(
     function () {
         jQuery(".landing-block__icon-1").addClass("d-none");
         jQuery(".landing-block__icon-2").removeClass("d-none");
@@ -11,7 +12,7 @@ jQuery(".landing-block__links .btn").hover(
         jQuery(".landing-block__icon-1").removeClass("d-none");
         jQuery(".landing-block__icon-2").addClass("d-none");
     }
-);
+); */
 
 jQuery(".about-block__links .btn").hover(
     function () {
@@ -25,23 +26,30 @@ jQuery(".about-block__links .btn").hover(
 );
 
 jQuery(document).ready(function() {
-    // Add smooth scrolling to all links
-    jQuery("a").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
+    jQuery(".topbar__nav-link a").on('click', function(event) {
+        jQuery("#mobileMenu").toggleClass("active");
         if (this.hash !== "") {
-            // Prevent default anchor click behavior
             event.preventDefault();
 
-            // Store hash
             var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
             jQuery('html, body').animate({
                 scrollTop: jQuery(hash).offset().top
-            }, 800, function() {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
+            }, 0, function() {
             });
-        } // End if
+        }
+    });
+});
+
+jQuery(document).ready(function () {
+    var header = jQuery(".site-header");
+    var sticky = header.offset().top;
+
+    jQuery(window).on("scroll", function () {
+        if (jQuery(window).scrollTop() > sticky) {
+            header.addClass("sticky");
+        } else {
+            header.removeClass("sticky");
+        }
     });
 });

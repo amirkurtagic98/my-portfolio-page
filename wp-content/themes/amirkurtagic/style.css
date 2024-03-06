@@ -12824,7 +12824,7 @@ header .topbar #menuToggler {
 .landing-block__links .btn {
   background: #D3E97A;
   border-radius: 100px;
-  padding: 4px 6px 4px 24px;
+  padding: 5px 6px 5px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12834,6 +12834,37 @@ header .topbar #menuToggler {
   line-height: 16px;
   color: #0A0A0A;
   text-transform: uppercase;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .landing-block__links .btn {
+    padding: 17px 36px 17px 24px;
+    gap: 24px;
+  }
+}
+.landing-block__links .btn:hover .landing-block__circle {
+  padding: 20px;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+.landing-block__links .btn:hover .landing-block__icon-desktop {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.landing-block__circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  transition: all 0.25s ease;
+  position: absolute;
+  top: 21px;
+}
+.landing-block__icon-desktop {
+  display: none;
 }
 .landing-block__image img {
   width: 100%;
@@ -13400,7 +13431,7 @@ header .topbar #menuToggler {
 .about-block__links .btn {
   background: #D3E97A;
   border-radius: 100px;
-  padding: 4px 6px 4px 24px;
+  padding: 5px 6px 5px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13410,6 +13441,37 @@ header .topbar #menuToggler {
   line-height: 16px;
   color: #0A0A0A;
   text-transform: uppercase;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .about-block__links .btn {
+    padding: 17px 36px 17px 24px;
+    gap: 24px;
+  }
+}
+.about-block__links .btn:hover .about-block__circle {
+  padding: 20px;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+.about-block__links .btn:hover .about-block__icon-desktop {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-block__circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  transition: all 0.25s ease;
+  position: absolute;
+  top: 21px;
+}
+.about-block__icon-desktop {
+  display: none;
 }
 .about-block__image img {
   width: 100%;
