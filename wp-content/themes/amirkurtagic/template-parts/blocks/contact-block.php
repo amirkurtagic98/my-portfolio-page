@@ -26,11 +26,11 @@
                     </div>
                     <div class="contact-block__links">
                         <?php $contact_block_link_linkedin = get_field( 'contact_block_link_linkedin' ); ?>
-                        <a href="<?php echo esc_url( $contact_block_link_linkedin ); ?>"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/linkedin-contact.svg"); ?></a>
+                        <a href="<?php echo esc_url( $contact_block_link_linkedin ); ?>" target="_blank"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/linkedin-contact.svg"); ?></a>
                         <?php $contact_block_link_github = get_field( 'contact_block_link_github' ); ?>
-                        <a href="<?php echo esc_url( $contact_block_link_github ); ?>"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/github-contact.svg"); ?></a>
+                        <a href="<?php echo esc_url( $contact_block_link_github ); ?>" target="_blank"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/github-contact.svg"); ?></a>
                         <?php $contact_block_link_instagram = get_field( 'contact_block_link_instagram' ); ?>
-                        <a href="<?php echo esc_url( $contact_block_link_instagram ); ?>"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/instagram-contact.svg"); ?></a>
+                        <a href="<?php echo esc_url( $contact_block_link_instagram ); ?>" target="_blank"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/instagram-contact.svg"); ?></a>
                     </div>
                 </div>
                 <div class="contact-block__copyright d-lg-block d-none">

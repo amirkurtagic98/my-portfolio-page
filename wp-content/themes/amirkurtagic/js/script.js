@@ -19,6 +19,21 @@ jQuery(document).ready(function() {
     });
 });
 
+jQuery(document).ready(function() {
+    jQuery(".btn-contact").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            jQuery('html, body').animate({
+                scrollTop: jQuery(hash).offset().top
+            }, 0, function() {
+            });
+        }
+    });
+});
+
 jQuery(document).ready(function () {
     var header = jQuery(".site-header");
     var sticky = header.offset().top;

@@ -36,7 +36,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                     ?>
-                    <a href="<?php echo esc_url( $link_url ); ?>" class="btn d-lg-flex d-none">
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo $link_target; ?>" class="btn d-lg-flex d-none">
                         <?php echo esc_html( $link_title ); ?>
                         <div class="about-block__circle-wrapper">
                             <div class="about-block__circle">
@@ -49,9 +49,9 @@
                         <span class="landing-block__icon"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/circle-download.svg"); ?></span>
                     </a>
                     <?php $about_block_link_linkedin = get_field( 'about_block_link_linkedin' ); ?>
-                    <a href="<?php echo esc_url( $about_block_link_linkedin ); ?>"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/linkedin.svg"); ?></a>
+                    <a href="<?php echo esc_url( $about_block_link_linkedin ); ?>" target="_blank"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/linkedin.svg"); ?></a>
                     <?php $about_block_link_github = get_field( 'about_block_link_github' ); ?>
-                    <a href="<?php echo esc_url( $about_block_link_github ); ?>"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/github.svg"); ?></a>
+                    <a href="<?php echo esc_url( $about_block_link_github ); ?>" target="_blank"><?php echo file_get_contents("C:/xampp/htdocs/12-MyPortfolioPage/myPortfolioPage/wp-content/themes/amirkurtagic/assets/icons/github.svg"); ?></a>
                 </div>
             </div>
         </div>
