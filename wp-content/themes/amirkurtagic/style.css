@@ -12867,6 +12867,8 @@ header .topbar #menuToggler {
   display: none;
 }
 .landing-block__image img {
+  border: 3px solid #c7c7c7;
+  border-radius: 20px;
   width: 100%;
 }
 
@@ -13474,6 +13476,8 @@ header .topbar #menuToggler {
   display: none;
 }
 .about-block__image img {
+  border: 3px solid #c7c7c7;
+  border-radius: 20px;
   width: 100%;
 }
 
